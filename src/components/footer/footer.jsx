@@ -16,7 +16,7 @@ const footer = () => {
               <img src="/project-images/telegram.svg" alt="gray-kv" />
               <img src="/project-images/instagram.svg" alt="gray-kv" />
               <img src="/project-images/linkedin.svg" alt="gray-kv" />
-              <img src="/project-images/gitHub.svg" alt="gray-kv" />
+              <img src="/project-images/github.svg" alt="gray-kv" />
               <img src="/project-images/facebook.svg" alt="gray-kv" />
             </li>
           </ul>
