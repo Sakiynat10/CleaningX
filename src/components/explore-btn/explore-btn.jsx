@@ -1,7 +1,7 @@
-
+import style from "./explore-btn.module.css";
 const exploreBtn = () => {
   return (
-    <button>Explore Services</button>
+    <button className={style["explore-btn"]}>Explore Services</button>
   )
 }
 

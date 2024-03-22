@@ -20,7 +20,7 @@
     align-items: center;
     gap: 40px;
     ul{
-        display: flex;
+        display: none;
         align-items: center;
         gap: 20px;
         a{
@@ -29,11 +29,33 @@
     }
 }
 
+.navbar-left img{
+    width: 140px;
+}
+
 .navbar-right{
     display: flex;
     align-items: center;
     gap: 20px;
     div{
+        display: none;
+    }
+}
+
+@media(min-width:460px){
+    .navbar-right div{
+        display: flex;
+    }
+    .navbar-left img{
+        width: 180px;
+    }
+}
+
+
+
+@media(min-width:830px){
+    .navbar-left ul{
         display: flex;
     }
 }
+

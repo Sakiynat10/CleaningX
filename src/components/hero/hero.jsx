@@ -3,6 +3,7 @@ import ContactNumber from "../contact-number/contact-number";
 import style from "./hero.module.css";
 import heroImage from "../../assets/images/hero-right.png";
 
+
 const hero = () => {
   return (
     <section id={style["hero"]}>
@@ -15,7 +16,7 @@ const hero = () => {
               ornare sed facilisis senectus dapibus nibh ultrices eget suscipit
               aliquet et nulla magna lacus penatibus.
             </p>
-            <div className="hero-left-btns">
+            <div className={style["hero-left-btns"]}>
               <GetButton />
               <ContactNumber />
             </div>
@@ -24,6 +25,7 @@ const hero = () => {
             <img src={heroImage} alt="" />
           </div>
         </div>
+        <div className={style["opacity"]}></div>
       </div>
     </section>
   );

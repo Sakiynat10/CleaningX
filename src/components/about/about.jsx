@@ -1,16 +1,17 @@
 import GetButton from "../get-button/getButton";
 import ExploreBtn from "../explore-btn/explore-btn";
+import style from "./about.module.css"
 const about = () => {
   return (
-    <section id="about">
+    <section id={style["about"]}>
       <div className="container">
         <h1>About</h1>
         <p>
           Sagittis nibh scelerisque vitae eget vulputate sem elementum sed neque
           nisi felis non ultrices massa id egestas quam velit pretium nu.
         </p>
-        <div className="about-cards">
-          <div className="about-card">
+        <div className={style["about-cards"]}>
+          <div className={style["about-card"]}>
             <img src="/project-images/about-card-1.png" alt="about-img-1" />
             <div className="card-info">
               <h3>1. Schedule online</h3>
@@ -21,7 +22,7 @@ const about = () => {
 
             </div>
           </div>
-          <div className="about-card">
+          <div className={style["about-card"]}>
             <img src="/project-images/about-card-2.png" alt="about-img-1" />
             <div className="card-info">
               <h3>2. Pay online easily</h3>
@@ -32,7 +33,7 @@ const about = () => {
 
             </div>
           </div>
-          <div className="about-card">
+          <div className={style["about-card"]}>
             <img src="/project-images/about-card-3.png" alt="about-img-1" />
             <div className="card-info">
               <h3>3. Get your house cleaned</h3>
@@ -44,7 +45,7 @@ const about = () => {
             </div>
           </div>
         </div>
-        <div className="about-btns">
+        <div className={style["about-btns"]}>
             <GetButton />
             <ExploreBtn />
         </div>

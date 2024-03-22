@@ -1,0 +1,197 @@
+#service{
+    padding-top: 120px;
+}
+
+#service img{
+    max-width: 600px;
+    width: 100%;
+}
+
+.service-titles{
+    text-align: center;
+    font-size: 32px;
+    color: rgba(33, 31, 84, 1);
+}
+
+.service-titles button{
+    margin-top: 20px;
+}
+
+.service-cards{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-card{
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #a29f9f;
+    text-align: center;
+}
+
+@media(min-width:600px){
+    .service-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .service-titles{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:900px){
+    .service-cards{
+        display: grid;
+        gap: 60px;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .service-card h4{
+        font-size: 18px !important;
+    }
+}
+
+
+@media(min-width:1100px){
+    .service-cards{
+        display: grid;
+        gap: 60px;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .service-card h4{
+        font-size: 28px !important;
+    }
+    .service-card{
+        padding: 15px 20px;
+    }
+}
+
+
+
+.service-card:nth-child(1)  {
+    padding: 60px 20px 20px 20px;
+}
+
+.service-card:nth-child(3){
+    padding: 75px 20px 20px 20px;  
+}
+
+.service-card h4{
+    margin-top: 24px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.01px;
+    color: rgba(33, 31, 84, 1);
+}
+
+.service-card p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.01px;
+    color: rgba(110, 113, 145, 1);
+}
+
+
+
+#covid{
+    background-color: rgba(33, 31, 84, 1) ;
+}
+
+.service-covid{
+    margin-top: 90px;
+}
+
+.service-covid img{
+    display: none;
+}
+
+
+
+.service-covid-info{
+    padding: 90px 10px 90px 10px;
+    text-align: center;
+    color: #fff;
+    background-image: url(/public/project-images/service-covid.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.service-covid-info img{
+    display: block;
+}
+
+.service-covid-info h1{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.service-covid-info p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-btns{
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+@media(min-width:900px) {
+
+    .service-covid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .service-covid img{
+        display: block;
+        width: 40%;
+    }
+
+    .service-covid-info{
+        background-image: none;
+        text-align: left;
+    }
+
+    .service-covid-info h3{
+        font-size: 24px;
+    }
+
+    .service-covid-info h1{
+        margin-left: 0;
+        font-size: 38px;
+    }
+
+    .service-covid-info p {
+        font-size: 18px;
+    }
+
+    .service-btns{
+        justify-content: left;
+    }
+}

@@ -1,29 +1,123 @@
 
 #hero{
+    margin-top: 60px;
     padding-top: 120px;
+    padding-bottom: 120px;
+    background: url(../../assets/images/hero-right.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    position: relative;
 }
 
 .hero-infos{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+.hero-left-btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
-@media(min-width:600px){
+@media(min-width:900px){
+    .hero-left-btns{
+        justify-content: left;
+    }
+    #hero{
+        background: none;
+        opacity: 1;
+        padding-top: 40px;
+    }
+}
+
+.hero-left{
+    z-index: 3;
+    width: 100%;
+}
+.hero-left h1{
+    max-width: 556px;
+    width: 100%;
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: rgba(33, 31, 84, 1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-left p{
+    max-width: 606px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30.01px;
+    text-align: left;
+    color: rgba(110, 113, 145, 1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:520px){
+    .hero-left h1{
+        font-size: 48px;
+    }
+    .hero-left p{
+        font-size: 16px;
+    }
+}
+
+@media(min-width:900px){
     .hero-left{
         background: none;
     }
     .hero-left h1{
-        max-width: 536px;
+        max-width: 556px;
         width: 100%;
         font-size: 64px;
+        margin: 0;
+        margin-bottom: 20px;
         color: rgba(33, 31, 84, 1);
+        display: block;
+        text-align: left;
     }
     .hero-left p{
+        max-width: 606px;
+        width: 100%;
         font-size: 21px;
         font-weight: 400;
         line-height: 30.01px;
+        margin: 0;
         text-align: left;
+        display: block;
         color: rgba(110, 113, 145, 1);
+    }
+}
+
+.hero-right{
+    display: none;
+}
+
+
+@media(min-width:900px){
+    .hero-right{
+        display: inline-block;
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .hero-right img{
+        max-width: 800px;
+        width: 100%;
     }
 }

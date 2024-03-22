@@ -3,7 +3,7 @@ import ContactNumber from "../contact-number/contact-number";
 
 const freeQuote = () => {
   return (
-    <div className="quote-btn">
+    <div>
       <GetButton />
       <ContactNumber/>
     </div>
