@@ -20,7 +20,7 @@
 
 .hero-left-btns{
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -28,12 +28,27 @@
 
 @media(min-width:900px){
     .hero-left-btns{
-        justify-content: left;
+        justify-content: center;
+    }
+
+    .hero-left-btns div{
+        margin-left: 0;
+        margin-right: 0;
     }
     #hero{
         background: none;
         opacity: 1;
         padding-top: 40px;
+    }
+}
+
+
+@media(min-width:1000px){
+    .hero-left-btns{
+        gap: 0px;
+    }
+    .hero-left-btns button{
+        margin-left: 0;
     }
 }
 
